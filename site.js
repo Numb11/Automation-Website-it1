@@ -61,6 +61,13 @@
     window.addEventListener("scroll", paintHeader, { passive: true });
   }
 
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    document.querySelectorAll(".sketch svg").forEach(function (svg) {
+      svg.setCurrentTime(3);
+      svg.pauseAnimations();
+    });
+  }
+
   var turn = document.querySelector("[data-turn]");
   if (turn && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
     var words = ["sensitive", "confidential", "restricted", "regulated", "protected", "personal"];

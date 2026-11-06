@@ -637,6 +637,16 @@ p { margin: 0 0 0.9rem; }
   color: var(--ink);
 }
 
+.sketch {
+  margin: 0 0 0.8rem;
+}
+
+.sketch svg {
+  display: block;
+  width: 10.5rem;
+  height: 5.9rem;
+}
+
 .instrument {
   background: var(--fir);
   color: #f3efe6;
