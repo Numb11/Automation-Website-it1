@@ -512,6 +512,8 @@ section { padding: 3.25rem 0; }
 
 section + section { border-top: 1px solid var(--line); }
 
+[id] { scroll-margin-top: 4.5rem; }
+
 h2, h3 {
   font-family: var(--serif);
   font-weight: 400;
@@ -558,11 +560,75 @@ p { margin: 0 0 0.9rem; }
 
 .steps {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 1.5rem;
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.trustbar {
+  padding: 1.9rem 0;
+  background: #efeae1;
+  border-bottom: 1px solid var(--line);
+}
+
+.trustbar ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem 2rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.trustbar strong {
+  display: block;
+  margin-bottom: 0.15rem;
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: 1.08rem;
+  color: var(--accent);
+}
+
+.trustbar span {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.compliance {
+  background: var(--fir);
+  color: #f3efe6;
+}
+
+.compliance .kicker { color: #c4a574; }
+
+.compliance h2 { color: #f6f3ec; }
+
+.compliance .intro { color: rgba(243, 239, 230, 0.72); }
+
+.compliance .example {
+  border-top-color: rgba(196, 165, 116, 0.55);
+}
+
+.compliance .example span { color: #c4a574; }
+
+.compliance .example p { color: rgba(243, 239, 230, 0.84); }
+
+.compliance .aside a { color: #c4a574; }
+
+.contact-cta { background: #efeae1; }
+
+.contact-points {
+  margin: 1.25rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contact-points li {
+  padding: 0.55rem 0;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
 }
 
 .reasons,
@@ -965,6 +1031,7 @@ ul.clean li { margin: 0.35rem 0; }
   .service-grid li,
   .service-list a,
   .steps,
+  .trustbar ul,
   .reasons,
   .examples,
   .instrument-grid,

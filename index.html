@@ -33,7 +33,7 @@
         <a href="compliance.html">Compliance</a>
         <a href="accreditation.html">Accreditation</a>
         <a href="team.html">The team</a>
-        <a href="contact.html">Contact</a>
+        <a href="#contact">Contact us</a>
       </nav>
     </div>
   </header>
@@ -44,7 +44,18 @@
       <div class="wrap hero-copy">
         <h1>AI software for <span class="turn"><span data-turn>sensitive</span></span> data.</h1>
         <p class="lede">From collection to the user, built around UK GDPR. Inference stays in-house where possible.</p>
-        <a class="button" href="contact.html">Contact us</a>
+        <a class="button" href="#contact">Contact us</a>
+      </div>
+    </section>
+
+    <section class="trustbar">
+      <div class="wrap">
+        <ul>
+          <li><strong>UK GDPR</strong><span>Built in from the first design decision</span></li>
+          <li><strong>In-house inference</strong><span>Records stay on infrastructure you control</span></li>
+          <li><strong>End to end</strong><span>From data collection to the people who use it</span></li>
+          <li><strong>MBCS-led</strong><span>Chartered Institute for IT professional members</span></li>
+        </ul>
       </div>
     </section>
 
@@ -299,14 +310,33 @@
       </div>
     </section>
 
-    <section class="band">
+    <section class="compliance" id="compliance">
       <div class="wrap">
-        <h2>How the data is handled, end to end</h2>
+        <p class="kicker">Compliance and security</p>
+        <h2>GDPR compliant, by design.</h2>
+        <p class="intro">Every application we build is designed to be compliant with UK GDPR from the first design decision — not patched on afterwards. Data protection by design and by default is how the system is put together.</p>
         <ul class="examples">
-          <li class="example"><span>Collected, held, delivered</span><p>Data is gathered once, held under the organisation’s control, and delivered to the people who need it. The path from collection to user is documented.</p></li>
-          <li class="example"><span>In-house inference</span><p>Where possible, the model runs on computers the organisation controls, or on one machine kept for that organisation. Nothing is sent to a public tool.</p></li>
-          <li class="example"><span>A person decides</span><p>Someone at the organisation chooses what is used. The software does not act on its own.</p></li>
-          <li class="example"><span>UK GDPR</span><p>Each system is documented for the duties that apply to it: where personal data sits, who can see it, and how it is protected. There is no certificate that makes a firm compliant.</p></li>
+          <li class="example"><span>UK GDPR by design</span><p>Personal data is mapped before a line of code is written: what is collected, why, where it sits, who can see it, and when it is removed. Every application we deliver is built to be GDPR compliant.</p></li>
+          <li class="example"><span>In-house inference</span><p>Where possible the model runs on infrastructure you control — your machines, or one kept for you alone. Records never pass through a public AI tool.</p></li>
+          <li class="example"><span>Data minimisation</span><p>The system asks for the least it needs. Fields that are not required for the job are left out of the design, not just hidden from the screen.</p></li>
+          <li class="example"><span>Access and audit</span><p>Named accounts, least-privilege access, and a log of who opened what. You can read the log, and you can remove access.</p></li>
+          <li class="example"><span>UK residency</span><p>Data is held in the UK wherever the work allows it. Nothing crosses a border without being named in the contract first.</p></li>
+          <li class="example"><span>Documentation you can hand to a DPO</span><p>Where personal data sits, who can reach it, and how the AI system works — written down so your data protection officer can review it, not just take our word for it.</p></li>
+        </ul>
+        <p class="aside"><a href="compliance.html">How we handle client information</a></p>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <h2>How we work</h2>
+        <p class="intro">A short engagement with a clear shape. Each step produces something you can read and keep.</p>
+        <ul class="steps">
+          <li><strong>Discover</strong><p>We look at the records, the task, and the rules that apply to them. You get a written scope.</p></li>
+          <li><strong>Design</strong><p>The system is designed around your data boundary first, the interface second. You get a design you can challenge.</p></li>
+          <li><strong>Build</strong><p>We build in the open on your infrastructure. You can see progress, and nothing is a black box.</p></li>
+          <li><strong>Test</strong><p>Security testing before delivery: what can leave, who can reach it, and where it breaks. You get the written result.</p></li>
+          <li><strong>Handover</strong><p>You run it, change who has access, and read the log. We remain on call if you want us.</p></li>
         </ul>
       </div>
     </section>
@@ -328,6 +358,45 @@
         <p class="aside"><a href="team.html">The team</a></p>
       </div>
     </section>
+
+    <section class="contact-cta" id="contact">
+      <div class="wrap split">
+        <div>
+          <p class="kicker">Contact us</p>
+          <h2>Tell us about the work.</h2>
+          <p class="intro">The organisation, the task, and what cannot go into a public tool. We reply to every enquiry ourselves, and a demonstration uses synthetic files.</p>
+          <ul class="contact-points">
+            <li>A reply from James or Joseph, not a sales team.</li>
+            <li>A first conversation about the data boundary before anything else.</li>
+            <li>No obligation, and no record of your enquiry beyond the reply.</li>
+          </ul>
+        </div>
+        <form class="contact-form" name="contact" method="POST" action="/thanks" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="contact" />
+          <p class="hidden">
+            <label>Do not fill this in: <input name="bot-field" /></label>
+          </p>
+          <p>
+            <label for="cf-home-name">Name</label>
+            <input id="cf-home-name" type="text" name="name" autocomplete="name" required>
+          </p>
+          <p>
+            <label for="cf-home-email">Email</label>
+            <input id="cf-home-email" type="email" name="email" autocomplete="email" required>
+          </p>
+          <p>
+            <label for="cf-home-org">Organisation</label>
+            <input id="cf-home-org" type="text" name="organisation" autocomplete="organization">
+          </p>
+          <p>
+            <label for="cf-home-message">What you need</label>
+            <textarea id="cf-home-message" name="message" rows="6" required></textarea>
+          </p>
+          <p class="form-note">Your details are used to reply to this enquiry only, and are not sent to any third party.</p>
+          <p><button class="button solid" type="submit">Send</button></p>
+        </form>
+      </div>
+    </section>
   </main>
   <footer class="site-footer">
     <div class="wrap">
@@ -339,10 +408,15 @@
       <nav aria-label="Footer">
         <a href="services.html">Services</a>
         <a href="compliance.html">Compliance</a>
+        <a href="accreditation.html">Accreditation</a>
         <a href="team.html">The team</a>
-        <a href="contact.html">Contact</a>
+        <a href="#contact">Contact us</a>
       </nav>
-      <p class="quiet">hello@automy.co.uk — the inbox opens when the domain is registered. The contact form reaches us now.</p>
+      <div>
+        <p><a href="mailto:hello@automy.co.uk">hello@automy.co.uk</a></p>
+        <p class="quiet">The inbox opens when the domain is registered. The contact form reaches us now.</p>
+        <p class="quiet">Built in the UK. Designed for UK GDPR.</p>
+      </div>
     </div>
   </footer>
   <script src="vendor/three.min.js"></script>
