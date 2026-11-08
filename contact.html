@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Contact — Limbert & Lyons</title>
-  <meta name="description" content="Contact James Limbert and Joseph Lyons. The company email opens when the domain is registered.">
+  <title>Contact — Automy</title>
+  <meta name="description" content="Contact Automy about secure AI software development. The form reaches us now; the email inbox opens when the domain is registered.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Libre+Franklin:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
@@ -14,8 +14,8 @@
   <a class="skip" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="wrap bar">
-      <a class="wordmark" href="index.html">Limbert <span>&amp;</span> Lyons</a>
-      <button class="menu-toggle" type="button" data-menu aria-expanded="false" aria-controls="primary-nav">Menu</button>
+      <a class="wordmark" href="index.html">Auto<span>my</span></a>
+      <button class="menu-toggle" type="button" data-menu aria-expanded="false" aria-controls="primary-nav" aria-label="Menu"><span></span><span></span><span></span></button>
       <nav class="nav" id="primary-nav" data-nav aria-label="Primary">
         <a href="index.html">Home</a>
         <div class="drop" data-drop>
@@ -33,7 +33,7 @@
         <a href="compliance.html">Compliance</a>
         <a href="accreditation.html">Accreditation</a>
         <a href="team.html">The team</a>
-        <a href="contact.html" aria-current="page">Contact</a>
+        <a href="#contact" aria-current="page">Contact us</a>
       </nav>
     </div>
   </header>
@@ -42,15 +42,42 @@
     <div class="page-head">
       <div class="wrap">
         <p class="kicker">Contact</p>
-        <h1>Write to us.</h1>
-        <p class="lede">The organisation, the work, and what cannot go into a public tool.</p>
+        <h1>Tell us about the work.</h1>
+        <p class="lede">The organisation, the task, and what cannot go into a public tool. A demonstration uses synthetic files.</p>
       </div>
     </div>
-    <section>
-      <div class="wrap prose">
-        <p class="address">hello@limbertlyons.co.uk</p>
-        <p>Not open yet. Mail sent there today will not arrive.</p>
-        <p>James Limbert and Joseph Lyons will answer it. A demonstration uses synthetic files.</p>
+    <section id="contact">
+      <div class="wrap split">
+        <form class="contact-form" name="contact" method="POST" action="/thanks" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="contact" />
+          <p class="hidden">
+            <label>Do not fill this in: <input name="bot-field" /></label>
+          </p>
+          <p>
+            <label for="cf-name">Name</label>
+            <input id="cf-name" type="text" name="name" autocomplete="name" required>
+          </p>
+          <p>
+            <label for="cf-email">Email</label>
+            <input id="cf-email" type="email" name="email" autocomplete="email" required>
+          </p>
+          <p>
+            <label for="cf-org">Organisation</label>
+            <input id="cf-org" type="text" name="organisation" autocomplete="organization">
+          </p>
+          <p>
+            <label for="cf-message">What you need</label>
+            <textarea id="cf-message" name="message" rows="6" required></textarea>
+          </p>
+          <p class="form-note">Your details are used to reply to this enquiry only, and are not sent to any third party.</p>
+          <p><button class="button solid" type="submit">Send</button></p>
+        </form>
+        <div class="contact-aside">
+          <h2>By email</h2>
+          <p class="address">hello@automy.co.uk</p>
+          <p>The inbox opens when the domain is registered. Until then, the form above reaches us first.</p>
+          <p>James Limbert and Joseph Lyons will answer it themselves.</p>
+        </div>
       </div>
     </section>
   </main>
@@ -58,7 +85,7 @@
   <footer class="site-footer">
     <div class="wrap">
       <div>
-        <strong>Limbert <span>&amp;</span> Lyons</strong>
+        <strong>Auto<span>my</span></strong>
         <p>Software and security for private data.</p>
         <p class="quiet">James Limbert and Joseph Lyons. The company is not incorporated yet.</p>
       </div>
@@ -66,9 +93,9 @@
         <a href="services.html">Services</a>
         <a href="compliance.html">Compliance</a>
         <a href="team.html">The team</a>
-        <a href="contact.html">Contact</a>
+        <a href="contact.html#contact">Contact us</a>
       </nav>
-      <p class="quiet">hello@limbertlyons.co.uk is reserved. The inbox opens when the domain is registered.</p>
+      <p class="quiet">hello@automy.co.uk — the inbox opens when the domain is registered. The contact form reaches us now.</p>
     </div>
   </footer>
   <script src="site.js"></script>
